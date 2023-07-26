@@ -34,7 +34,7 @@ WORKDIR ${AUTH_HOME}/mumble-authenticator
 
 # Install python dependencies
 RUN pip install --upgrade pip
-RUN pip install wheel gunicornv mysqlclient
+RUN pip install wheel gunicorn mysqlclient
 RUN echo "Ice install will take quite some time (5+ Min) please be patient..."
 RUN pip install -r requirements.txt
 
