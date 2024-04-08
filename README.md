@@ -14,7 +14,7 @@ services:
   mumble_auth:
     container_name: ${MUMBLE_HOST_NAME}
     hostname: ${MUMBLE_HOST_NAME}
-    image: mumble_auth:latest ##TODO fix this to work this is a local built image
+    image: ghcr.io/994wemj/allianceauth-docker-mumble:main
     env_file:
       - ./.env
     restart: unless-stopped
