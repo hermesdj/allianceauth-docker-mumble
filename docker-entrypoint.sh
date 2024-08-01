@@ -8,6 +8,7 @@ sed -ri 's@&&AA_DB_PORT&&@'${AA_DB_PORT}'@' /home/allianceauth/mumble-authentica
 sed -ri 's@&&MUMBLE_ICE_SECRET&&@'${MUMBLE_ICE_SECRET}'@' /home/allianceauth/mumble-authenticator/authenticator.ini
 sed -ri 's@&&MUMBLE_HOST_NAME&&@'${MUMBLE_HOST_NAME}'@' /home/allianceauth/mumble-authenticator/authenticator.ini
 sed -ri 's@&&MUMBLE_ICE_PORT&&@'${MUMBLE_ICE_PORT}'@' /home/allianceauth/mumble-authenticator/authenticator.ini
+sed -ri 's@&&AA_AVATAR_ENABLE&&@'${AA_AVATAR_ENABLE}'@' /home/allianceauth/mumble-authenticator/authenticator.ini
 
 # Bootstrap Murmurs config parser, but echo its command instead of launching mumble
 bash /entrypoint.sh echo
