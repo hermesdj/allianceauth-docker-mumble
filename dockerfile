@@ -19,7 +19,7 @@ RUN mkdir -p ${VIRTUAL_ENV} \
 
 # Install build dependencies
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
-    python3 python3-pip python3-dev python3-venv gcc git htop build-essential libssl-dev libbz2-dev libmariadb-dev python-dev supervisor pkg-config
+    python3 python3-pip python3-dev python3-venv gcc git htop build-essential libssl-dev libbz2-dev libmariadb-dev supervisor pkg-config
 
 # Switch to non-root user
 USER ${AUTH_USER}
@@ -28,7 +28,7 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 WORKDIR ${AUTH_HOME}
 
 # OPTIONAL TEMPLINKS? Use and emv variable
-RUN git clone https://gitlab.com/aaronkable/mumble-authenticator.git 
+RUN git clone https://gitlab.com/aaronkable/mumble-authenticator.git
 
 WORKDIR ${AUTH_HOME}/mumble-authenticator
 
