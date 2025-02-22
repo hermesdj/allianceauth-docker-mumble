@@ -1,4 +1,4 @@
-FROM mumblevoip/mumble-server:latest
+FROM mumblevoip/mumble-server:v1.5.735-0
 #FROM python:3.10-slim
 ENV VIRTUAL_ENV=/home/allianceauth/venv
 ENV AUTH_HOME=/home/allianceauth
